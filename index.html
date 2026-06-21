@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/wanakana"></script>
+</head>
+<body>
+
+    <h1>Typing Game</h1>
+    <button id="startButton">
+    START
+    </button>
+
+    <div id="countdown"></div>
+    <div id="jpWord"></div>
+    <div id="word"></div>
+
+    <input
+        type="text"
+        id="input"
+        autocomplete="off"
+        autofocus
+    >
+
+    <p>Score: <span id="score">0</span></p>
+    <div id="comboDisplay">
+    COMBO
+    <span id="combo">0</span>
+    </div>
+    <p>Multiplier: x<span id="multiplier">1.00</span></p>
+    <p>Time: <span id="time">60</span></p>
+    <p>KPS: <span id="kps">0.00</span></p>
+
+    <script src="words.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
